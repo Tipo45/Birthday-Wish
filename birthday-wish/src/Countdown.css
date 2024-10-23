@@ -1,5 +1,5 @@
 .timer-container {
-    background: #c36161;
+    background: #fff7e6;
     color: #f4f4f4;
     padding: 5px;
 }
@@ -22,6 +22,7 @@
 
 .timer-icon {
     font-size: 1.2rem;
+    color: #f39c12;
 }
 
 h2 {
@@ -48,6 +49,54 @@ section p:first-child, .timer div:last-child span {
     font-size: 0.9rem;
 }
 
+.btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #95a5a6;
+    color: #f4f4f4;
+    padding: 16px 2%;
+    cursor: not-allowed;
+    font-size: 1.2rem;
+}
+
+.btn:enabled {
+    background: #3498db;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content h5{
+    margin: 10px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5088f8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #3a6bc1;
+}
+
 @media (min-width: 425px) {
 
     .timer-icon {
@@ -64,5 +113,14 @@ section p:first-child, .timer div:last-child span {
 
     section p:first-child, .timer div:last-child span {
         font-size: 1.4rem;
+    }
+
+    .popup {
+        top: 60%;
+        padding: 20px;
+    }
+
+    .popup-content {
+        font-size: 0.9rem;
     }
 }
