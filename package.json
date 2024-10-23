@@ -15,5 +15,12 @@
   },
   "devDependencies": {
     "vite": "^5.4.10"
-  }
+  },
+  "name": "birthday",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
